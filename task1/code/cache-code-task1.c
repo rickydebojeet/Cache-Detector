@@ -1,23 +1,38 @@
 // Generate cache sizes of my computer
 #include <stdio.h>
 #include <time.h>
-#include <stdlib.h>
 
-int main(int argc, char *argv[])
+#define KB 1024
+#define MB 1024 * 1024
+
+int main()
 {
-    char *ip = argv[1];
-    long int size = strtol(ip, NULL, 10);
-    double arr[size];
-    clock_t start, end;
-    double cpu_time_used;
+    static int arr[64 * MB];
+    unsigned long int sizes[] = {1 * KB, 2 * KB, 4 * KB, 8 * KB, 16 * KB, 32 * KB, 64 * KB, 
+    128 * KB, 256 * KB, 512 * KB, 1 * MB, 2 * MB, 4 * MB, 8 * MB, 16 * MB, 32 * MB, 64 * MB
+    };
+    
+    int sizeOfSizes = sizeof(sizes)/sizeof(unsigned long int);
 
-    start = clock();
-    for (long int i = 0; i < size; i++)
+    clock_t start, end;
+    double cpu_time;
+
+    for (int looper = 0, power = 10; looper < sizeOfSizes; looper++, power++)
     {
-        arr[i] = 1;
+        cpu_time = 0;
+        for(int i = 0; i < 10; i++)
+        {
+            start = clock();
+            for (unsigned long int steps = 0; steps < 10 * MB; steps++)
+            {
+                arr[(steps * 16) & (sizes[looper] - 1)]++;
+            }
+            end = clock();
+            cpu_time += (double)(end - start) / CLOCKS_PER_SEC;
+        
+        }
+        cpu_time /= 10;
+        printf("%d %.30f\n", power, cpu_time);
     }
-    end = clock();
-    cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
-    printf("Time taken for 1D array: %f\n", cpu_time_used);
     return 0;
 }
