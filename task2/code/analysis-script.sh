@@ -1,6 +1,5 @@
 #!/bin/bash
 echo Analysing and Generating PNG!!
-touch file.txt
 
 SIZE='
 10
@@ -20,6 +19,7 @@ SIZE='
 '
 
 touch results.txt
+> results.txt
 
 for i in ${SIZE}; do
     echo -n "${i} " >> results.txt
