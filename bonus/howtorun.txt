@@ -1,0 +1,3 @@
+PRE REQUISITES: For plotting of the graph it requires plotutils package.
+
+To run the code just go to the /bonus/code/ directory and run the following command: bash block-runner.sh
