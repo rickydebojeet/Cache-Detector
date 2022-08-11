@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
 
 int power(int n)
 {
-    int i;
-    for(i = 1; i <= n; i *= 2 );
-    return i;
+    int result = 1;
+    for(int i = 1; i <= n; result *= 2, i++ );
+    return result;
 }
