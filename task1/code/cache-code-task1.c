@@ -20,8 +20,8 @@ int main()
     /**
      * Allocate arrays of different sizes
      *
-     * @size: size of the array in bytes.
-     * @power: power of 2 to be used to calculate the size of the array.
+     * size: size of the array in bytes.
+     * power: power of 2 to be used to calculate the size of the array.
      *
      * The loop allocates arrays of size 2^power bytes the power ranges from 10 to 24
      * that is the array size ranges form 1KB to 16MB
@@ -37,7 +37,7 @@ int main()
             /**
              * Access the array for equivalent number of times
              *
-             * @steps: number of acceses to the array
+             * steps: number of acceses to the array
              *
              * The loop accesses the array at an interval of 64 bytes
              * so that if there is cache miss every time it is trying to access the array
