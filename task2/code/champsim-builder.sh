@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# Different Sizes of Cache
 SIZE='
 10
 11
@@ -16,12 +18,7 @@ SIZE='
 23
 '
 
-CHAMPSIM_DIR=""
-TRACE_DIR=""
-DESTINATION='data'
-
-mkdir -p ${DESTINATION}
-
+# Create the output files for the different traces
 for i in ${SIZE}; do
     (./run_champsim.sh bimodal-no-no-no-no-lru-1core 1 1 ${i}.champsimtrace.xz)
 done

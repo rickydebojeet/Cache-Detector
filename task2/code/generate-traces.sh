@@ -1,4 +1,5 @@
 #!/bin/bash
+# Different Sizes of Cache
 SIZE='
 10
 11
@@ -16,7 +17,7 @@ SIZE='
 23
 '
 
-
+# Create the traces for the different sizes of cache
 for i in ${SIZE}; do
 	./pin -t /home/ricky/Desktop/ChampSim/tracer/obj-intel64/champsim_tracer.so -o ${i}.champsimtrace -t 1000000 -- /home/ricky/Desktop/Cache-Detector/task2/code/a.out ${i}
     xz ${i}.champsimtrace
