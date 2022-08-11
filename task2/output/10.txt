@@ -12,35 +12,35 @@ CPU 0 runs /home/ricky/Desktop/ChampSim/traces/10.champsimtrace.xz
 CPU 0 Bimodal branch predictor
 *** Reached end of trace for Core: 0 Repeating trace: /home/ricky/Desktop/ChampSim/traces/10.champsimtrace.xz
 
-Warmup complete CPU 0 instructions: 1000004 cycles: 500158 (Simulation time: 0 hr 0 min 3 sec) 
+Warmup complete CPU 0 instructions: 1000002 cycles: 509479 (Simulation time: 0 hr 0 min 3 sec) 
 
 *** Reached end of trace for Core: 0 Repeating trace: /home/ricky/Desktop/ChampSim/traces/10.champsimtrace.xz
-Finished CPU 0 instructions: 1000003 cycles: 986683 cumulative IPC: 1.0135 (Simulation time: 0 hr 0 min 7 sec) 
+Finished CPU 0 instructions: 1000000 cycles: 1005972 cumulative IPC: 0.994063 (Simulation time: 0 hr 0 min 7 sec) 
 
 ChampSim completed all CPUs
 
 Region of Interest Statistics
 
-CPU 0 cumulative IPC: 1.0135 instructions: 1000003 cycles: 986683
-L1D TOTAL     ACCESS:     260695  HIT:     257782  MISS:       2913
-L1D LOAD      ACCESS:     149939  HIT:     147569  MISS:       2370
-L1D RFO       ACCESS:     110756  HIT:     110213  MISS:        543
+CPU 0 cumulative IPC: 0.994063 instructions: 1000000 cycles: 1005972
+L1D TOTAL     ACCESS:     224322  HIT:     221354  MISS:       2968
+L1D LOAD      ACCESS:     113522  HIT:     111096  MISS:       2426
+L1D RFO       ACCESS:     110800  HIT:     110258  MISS:        542
 L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
 L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
 L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
-L1D AVERAGE MISS LATENCY: 15.0124 cycles
-L1I TOTAL     ACCESS:     183327  HIT:     182531  MISS:        796
-L1I LOAD      ACCESS:     183327  HIT:     182531  MISS:        796
+L1D AVERAGE MISS LATENCY: 15.0142 cycles
+L1I TOTAL     ACCESS:     185604  HIT:     184806  MISS:        798
+L1I LOAD      ACCESS:     185604  HIT:     184806  MISS:        798
 L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
 L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
 L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
 L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
-L1I AVERAGE MISS LATENCY: 14.044 cycles
-L2C TOTAL     ACCESS:       4356  HIT:       4356  MISS:          0
-L2C LOAD      ACCESS:       3166  HIT:       3166  MISS:          0
+L1I AVERAGE MISS LATENCY: 14.0451 cycles
+L2C TOTAL     ACCESS:       4477  HIT:       4477  MISS:          0
+L2C LOAD      ACCESS:       3224  HIT:       3224  MISS:          0
 L2C RFO       ACCESS:        542  HIT:        542  MISS:          0
 L2C PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
-L2C WRITEBACK ACCESS:        648  HIT:        648  MISS:          0
+L2C WRITEBACK ACCESS:        711  HIT:        711  MISS:          0
 L2C PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
 L2C AVERAGE MISS LATENCY: -nan cycles
 LLC TOTAL     ACCESS:          0  HIT:          0  MISS:          0
@@ -50,7 +50,7 @@ LLC PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
 LLC WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
 LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
 LLC AVERAGE MISS LATENCY: -nan cycles
-Major fault: 0 Minor fault: 125
+Major fault: 0 Minor fault: 127
 
 DRAM Statistics
  CHANNEL 0
@@ -60,15 +60,15 @@ DRAM Statistics
 
  AVG_CONGESTED_CYCLE: -
 
-CPU 0 Branch Prediction Accuracy: 95.4379% MPKI: 4.32297 Average ROB Occupancy at Mispredict: 14.5605
+CPU 0 Branch Prediction Accuracy: 95.4375% MPKI: 4.31899 Average ROB Occupancy at Mispredict: 14.5191
 
 Branch types
-NOT_BRANCH: 904905 90.4902%
-BRANCH_DIRECT_JUMP: 4093 0.409299%
-BRANCH_INDIRECT: 169 0.0168999%
-BRANCH_CONDITIONAL: 89103 8.91027%
-BRANCH_DIRECT_CALL: 644 0.0643998%
-BRANCH_INDIRECT_CALL: 54 0.00539998%
-BRANCH_RETURN: 696 0.0695998%
+NOT_BRANCH: 905005 90.5005%
+BRANCH_DIRECT_JUMP: 4090 0.409%
+BRANCH_INDIRECT: 171 0.0171%
+BRANCH_CONDITIONAL: 89009 8.9009%
+BRANCH_DIRECT_CALL: 644 0.0644%
+BRANCH_INDIRECT_CALL: 54 0.0054%
+BRANCH_RETURN: 696 0.0696%
 BRANCH_OTHER: 0 0%
 
