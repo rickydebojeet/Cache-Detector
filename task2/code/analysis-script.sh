@@ -19,14 +19,14 @@ SIZE='
 23
 '
 
-touch file.txt
+touch results.txt
 
 for i in ${SIZE}; do
     echo -n "${i} " >> file.txt
     cat ../output/${i}.txt | grep IPC | cut -d ' ' -f 9,10 | grep IPC | cut -d ' ' -f2 >> file.txt 
 done
 
-cat file.txt | graph -T png -h .3 -w .6 > ../reports_and_plots/plot-task1.png
+cat results.txt | graph -T png -h .3 -w .6 > ../reports_and_plots/plot-task1.png
 
 echo Done!!
 
