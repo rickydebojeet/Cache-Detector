@@ -8,12 +8,22 @@
 /**
  * This program is used to measure different caches of the CPU.
  *
+ * @param argc number of arguments
+ * @param argv array of arguments
+ * @return int
+ * 
  * The program allocates arrays of different sizes and accesses them for equivalent time
  * Checks the time taken for each array size and prints the results
- * @return int
+ * By default it allocates upto 16 MB but can be changed using Command Line Arguments
  */
-int main()
+int main(int argc, char *argv[])
 {
+    int limit;
+    if (argc > 1)   
+        limit = atoi(argv[1]); ///< setting manual limit
+    else
+        limit = 24; ///< default limit
+    
     clock_t start, end; ///< used to measure time taken for each array size
     double cpu_time;
 
@@ -23,10 +33,11 @@ int main()
      * size: size of the array in bytes.
      * power: power of 2 to be used to calculate the size of the array.
      *
-     * The loop allocates arrays of size 2^power bytes the power ranges from 10 to 24
-     * that is the array size ranges form 1KB to 16MB
+     * The loop allocates arrays of size 2^power bytes 
+     * By default the power ranges from 10 to 24 that is the array size ranges form 1KB to 16MB.
+     * But it can be changed by giving command line argument
      */
-    for (int size = 1024 / sizeof(int), power = 10; power <= 24; size *= 2, power++)
+    for (int size = 1024 / sizeof(int), power = 10; power <= limit; size *= 2, power++)
     {
         int *arr = (int *)malloc(sizeof(int) * size);
         cpu_time = 0; ///< reset the time taken for each array size
