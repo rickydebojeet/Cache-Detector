@@ -4,7 +4,7 @@
 #define K 1024
 #define M 1024 * 1024
 
-int power(int);
+unsigned int power(int);
 
 /**
  * This program is used to measure different caches of the CPU.
@@ -21,8 +21,8 @@ int main(int argc, char *argv[])
     int input = atoi(argv[1]); ///< size of the array in log2(bytes)
     int size = power(input) / sizeof(int);
 
-    int *arr = (int *)malloc(sizeof(int) * size);
-    for (unsigned long int steps = 0; steps < 10 * M; steps++)
+    int *arr = (int *)malloc(size * sizeof(int));
+    for (unsigned long int steps = 0; steps < 20 * M; steps++)
     {
         arr[(steps * 16) & (size - 1)]++; ///< since size is 2^n we can use bitwise and to get the remainder
     }
@@ -35,9 +35,9 @@ int main(int argc, char *argv[])
  * @param n: the power to be calculated
  * @return int: the power of 2
  */
-int power(int n)
+unsigned int power(int n)
 {
-    int result = 1;
+    unsigned int result = 1;
     for (int i = 1; i <= n; result *= 2, i++)
         ;
     return result;
