@@ -30,7 +30,9 @@ for i in ${SIZE}; do
 done
 
 # Plot the results
-cat results.txt | graph -T png -h .3 -w .6 > ../reports_and_plots/plot-task2.png
+cat results.txt | graph -T png --bitmap-size "1400x1200" -g 3 -L "IPC vs Array Size" -X "Array in Powers of 2" -Y IPC > ../reports_and_plots/plot-task2.png
+
+rm results.txt
 
 echo Done!!
 
