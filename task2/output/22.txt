@@ -12,7 +12,7 @@ CPU 0 runs /home/ricky/Desktop/ChampSim/traces/22.champsimtrace.xz
 CPU 0 Bimodal branch predictor
 *** Reached end of trace for Core: 0 Repeating trace: /home/ricky/Desktop/ChampSim/traces/22.champsimtrace.xz
 
-Warmup complete CPU 0 instructions: 1000003 cycles: 652656 (Simulation time: 0 hr 0 min 3 sec) 
+Warmup complete CPU 0 instructions: 1000003 cycles: 652656 (Simulation time: 0 hr 0 min 4 sec) 
 
 *** Reached end of trace for Core: 0 Repeating trace: /home/ricky/Desktop/ChampSim/traces/22.champsimtrace.xz
 Finished CPU 0 instructions: 1000000 cycles: 12483520 cumulative IPC: 0.0801056 (Simulation time: 0 hr 0 min 20 sec) 
