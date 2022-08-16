@@ -10,47 +10,46 @@ Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 3200 MT/s
 
 CPU 0 runs /home/ricky/Desktop/ChampSim/traces/15.champsimtrace.xz
 CPU 0 Bimodal branch predictor
-*** Reached end of trace for Core: 0 Repeating trace: /home/ricky/Desktop/ChampSim/traces/15.champsimtrace.xz
 
-Warmup complete CPU 0 instructions: 1000003 cycles: 510772 (Simulation time: 0 hr 0 min 3 sec) 
+Warmup complete CPU 0 instructions: 1000002 cycles: 541332 (Simulation time: 0 hr 0 min 3 sec) 
 
 *** Reached end of trace for Core: 0 Repeating trace: /home/ricky/Desktop/ChampSim/traces/15.champsimtrace.xz
-Finished CPU 0 instructions: 1000001 cycles: 1013060 cumulative IPC: 0.987109 (Simulation time: 0 hr 0 min 7 sec) 
+Finished CPU 0 instructions: 1000000 cycles: 980115 cumulative IPC: 1.02029 (Simulation time: 0 hr 0 min 7 sec) 
 
 ChampSim completed all CPUs
 
 Region of Interest Statistics
 
-CPU 0 cumulative IPC: 0.987109 instructions: 1000001 cycles: 1013060
-L1D TOTAL     ACCESS:     256142  HIT:     252703  MISS:       3439
-L1D LOAD      ACCESS:     145340  HIT:     142457  MISS:       2883
-L1D RFO       ACCESS:     110802  HIT:     110246  MISS:        556
+CPU 0 cumulative IPC: 1.02029 instructions: 1000000 cycles: 980115
+L1D TOTAL     ACCESS:     275570  HIT:     275570  MISS:          0
+L1D LOAD      ACCESS:     150571  HIT:     150571  MISS:          0
+L1D RFO       ACCESS:     124999  HIT:     124999  MISS:          0
 L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
 L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
 L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
-L1D AVERAGE MISS LATENCY: 15.0782 cycles
-L1I TOTAL     ACCESS:     238264  HIT:     237467  MISS:        797
-L1I LOAD      ACCESS:     238264  HIT:     237467  MISS:        797
+L1D AVERAGE MISS LATENCY: -nan cycles
+L1I TOTAL     ACCESS:     255682  HIT:     255682  MISS:          0
+L1I LOAD      ACCESS:     255682  HIT:     255682  MISS:          0
 L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
 L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
 L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
 L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
-L1I AVERAGE MISS LATENCY: 14.4191 cycles
-L2C TOTAL     ACCESS:       5397  HIT:       5379  MISS:         18
-L2C LOAD      ACCESS:       3680  HIT:       3664  MISS:         16
-L2C RFO       ACCESS:        555  HIT:        553  MISS:          2
+L1I AVERAGE MISS LATENCY: -nan cycles
+L2C TOTAL     ACCESS:          0  HIT:          0  MISS:          0
+L2C LOAD      ACCESS:          0  HIT:          0  MISS:          0
+L2C RFO       ACCESS:          0  HIT:          0  MISS:          0
 L2C PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
-L2C WRITEBACK ACCESS:       1162  HIT:       1162  MISS:          0
+L2C WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
 L2C PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
-L2C AVERAGE MISS LATENCY: 30 cycles
-LLC TOTAL     ACCESS:         20  HIT:         20  MISS:          0
-LLC LOAD      ACCESS:         16  HIT:         16  MISS:          0
-LLC RFO       ACCESS:          2  HIT:          2  MISS:          0
+L2C AVERAGE MISS LATENCY: -nan cycles
+LLC TOTAL     ACCESS:          0  HIT:          0  MISS:          0
+LLC LOAD      ACCESS:          0  HIT:          0  MISS:          0
+LLC RFO       ACCESS:          0  HIT:          0  MISS:          0
 LLC PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
-LLC WRITEBACK ACCESS:          2  HIT:          2  MISS:          0
+LLC WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
 LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
 LLC AVERAGE MISS LATENCY: -nan cycles
-Major fault: 0 Minor fault: 133
+Major fault: 0 Minor fault: 11
 
 DRAM Statistics
  CHANNEL 0
@@ -60,15 +59,15 @@ DRAM Statistics
 
  AVG_CONGESTED_CYCLE: -
 
-CPU 0 Branch Prediction Accuracy: 95.4458% MPKI: 4.31098 Average ROB Occupancy at Mispredict: 14.6655
+CPU 0 Branch Prediction Accuracy: 100% MPKI: 0 Average ROB Occupancy at Mispredict: -nan
 
 Branch types
-NOT_BRANCH: 905008 90.5007%
-BRANCH_DIRECT_JUMP: 4089 0.4089%
-BRANCH_INDIRECT: 169 0.0169%
-BRANCH_CONDITIONAL: 89008 8.90079%
-BRANCH_DIRECT_CALL: 644 0.0643999%
-BRANCH_INDIRECT_CALL: 54 0.00539999%
-BRANCH_RETURN: 696 0.0695999%
+NOT_BRANCH: 937500 93.75%
+BRANCH_DIRECT_JUMP: 0 0%
+BRANCH_INDIRECT: 0 0%
+BRANCH_CONDITIONAL: 62500 6.25%
+BRANCH_DIRECT_CALL: 0 0%
+BRANCH_INDIRECT_CALL: 0 0%
+BRANCH_RETURN: 0 0%
 BRANCH_OTHER: 0 0%
 
