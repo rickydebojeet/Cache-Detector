@@ -18,7 +18,7 @@ SIZE='
 23
 '
 
-OUTPUT_PATH="/home/ricky/Desktop/Cache-Detector/task2/output/"
+OUTPUT_PATH="/home/ricky/Desktop/22D0371/task2/output/"
 
 # Create the output files for the different traces
 for i in ${SIZE}; do
