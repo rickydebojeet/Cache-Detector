@@ -33,3 +33,13 @@ Go to the `task2\code\` folder and run the following command:
 ```bash
 bash analysis-script.sh
 ```
+
+## Bonus: Finding Cache sizes
+The program measures the size of cache block of your system. It generates a plot by observing which the value can be found out.
+> **_NOTE:_**  The prefetcher must be turned off to get perfect results.
+
+### Usage
+Go to the `bonus\code\` folder and run the following command:
+```bash
+bash block-runner.sh
+```
